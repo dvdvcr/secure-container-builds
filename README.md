@@ -10,7 +10,7 @@
 
     podman run --device /dev/fuse -v ./build:/build:z -v ./shared:/var/lib/shared/:Z -v ./targetdir:/var/lib/containers:Z quay.io/buildah/stable buildah push localhost/my-image registry:5000
 
-### the Dockerfile under /build is building Buildah itself but could be replaced with whatever you're building.
+#### the Dockerfile under /build is building Buildah itself but could be replaced with whatever.
 
 # refs
 https://github.com/containers/buildah/tree/main/contrib/buildahimage
